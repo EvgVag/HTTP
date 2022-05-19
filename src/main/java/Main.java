@@ -30,7 +30,7 @@ public class Main {
         List<Cats> cats = mapper.readValue(response.getEntity().getContent(), new TypeReference<List<Cats>>() {
         });
         Stream<Cats> sort = cats.stream()
-                .filter(value -> value.getUpvotes() != 0 && value.getUpvotes() > 0);
+                .filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0);
         sort.forEach(System.out::println);
     }
 }

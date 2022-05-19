@@ -5,7 +5,7 @@ public class Cats {
     private String text;
     private String type;
     private String user;
-    private int upvotes;
+    private Integer upvotes;
 
 
     public String getId() {
@@ -24,7 +24,7 @@ public class Cats {
         return user;
     }
 
-    public int getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 
